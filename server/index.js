@@ -35,3 +35,5 @@ mongoose.connection.once("open", () => {
     console.log("db connected")
     app.listen(process.env.PORT || 5000, console.log(`Server Running... ${process.env.PORT || 5000}`))
 })
+
+module.exports = app
