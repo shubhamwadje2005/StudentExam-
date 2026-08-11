@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 
 // ✅ Update with your correct MongoDB connection string
-mongoose.connect("mongodb+srv://shubham:Etiycs7Bdi6yhEiH@cluster0.bqy8u.mongodb.net/student-exam");
+mongoose.connect("mongodb://shubham:zxSzcB5E65BaOM0a@cluster0-shard-00-00.bqy8u.mongodb.net:27017,cluster0-shard-00-01.bqy8u.mongodb.net:27017,cluster0-shard-00-02.bqy8u.mongodb.net:27017/my-portfolio?ssl=true&replicaSet=atlas-s7wm8k-shard-0&authSource=admin&appName=Cluster0/student-exam");
 
 const Admin = mongoose.model("admin", new mongoose.Schema({
     name: String,
