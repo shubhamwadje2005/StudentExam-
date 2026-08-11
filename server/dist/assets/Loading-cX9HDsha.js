@@ -1,0 +1,1 @@
+import{j as t}from"./index-BPmaHwR3.js";const e=()=>t.jsxs("div",{className:"vh-100 w-100 d-flex justify-content-center align-items-center position-absolute top-0 start-0 bg-light",children:[t.jsx("h6",{children:"Please Wait..."}),t.jsx("div",{class:"spinner-border text-primary"})]});export{e as L};
