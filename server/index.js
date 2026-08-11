@@ -8,7 +8,7 @@ const path = require("path");
 
 const app = express()
 app.use(express.json())
-app.use(express.static("dist"));
+// app.use(express.static("dist"));
 // app.use(cors({ origin: "https://studentexam.onrender.com", credentials: true }))
 app.use(cors({ origin: "http://localhost:5173", credentials: true }))
 app.use(cookieParser())
@@ -18,7 +18,10 @@ app.use("/api/admin", adminProtected, require("./routes/admin.exam.route"))
 app.use("/api/user", userProtected, require("./routes/user.exam.route"))
 
 app.use("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "dist", "index.html"));
+    // res.sendFile(path.join(__dirname, "dist", "index.html"));
+    res.json({
+        message: "Student Exam Backend is running",
+    });
 });
 
 app.use((err, req, res, next) => {
